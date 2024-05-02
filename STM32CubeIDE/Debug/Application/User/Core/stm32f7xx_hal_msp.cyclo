@@ -1,0 +1,13 @@
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:64:6:HAL_MspInit	1
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:89:6:HAL_CRC_MspInit	2
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:111:6:HAL_CRC_MspDeInit	2
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:133:6:HAL_DMA2D_MspInit	2
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:158:6:HAL_DMA2D_MspDeInit	2
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:183:6:HAL_I2C_MspInit	5
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:262:6:HAL_I2C_MspDeInit	3
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:313:6:HAL_LTDC_MspInit	3
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:430:6:HAL_LTDC_MspDeInit	2
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:499:6:HAL_QSPI_MspInit	2
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:562:6:HAL_QSPI_MspDeInit	2
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:701:6:HAL_SDRAM_MspInit	2
+C:/TouchGFXProjects/frog_tank/Core/Src/stm32f7xx_hal_msp.c:787:6:HAL_SDRAM_MspDeInit	2

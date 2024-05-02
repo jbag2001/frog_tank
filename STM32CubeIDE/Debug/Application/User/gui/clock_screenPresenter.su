@@ -1,0 +1,9 @@
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:22:18:virtual void ModelListener::updateClock()	0	static
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::updateIcons()	0	static
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:34:18:virtual void ModelListener::updateReadings()	0	static
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:40:18:virtual void ModelListener::updateLiveGraph()	0	static
+../../TouchGFX/gui/include/gui/clock_screen_screen/clock_screenPresenter.hpp:28:13:clock_screenPresenter::~clock_screenPresenter()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenPresenter.cpp:10:6:virtual void clock_screenPresenter::activate()	0	static
+../../TouchGFX/gui/include/gui/clock_screen_screen/clock_screenPresenter.hpp:28:13:virtual clock_screenPresenter::~clock_screenPresenter()	8	static
+../../TouchGFX/gui/include/gui/clock_screen_screen/clock_screenPresenter.hpp:28:13:virtual void* clock_screenPresenter::_ZThn4_N21clock_screenPresenterD1Ev()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenPresenter.cpp:4:1:clock_screenPresenter::clock_screenPresenter(clock_screenView&)	0	static

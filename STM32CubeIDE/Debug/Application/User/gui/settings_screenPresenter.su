@@ -1,0 +1,9 @@
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:22:18:virtual void ModelListener::updateClock()	0	static
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::updateIcons()	0	static
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:34:18:virtual void ModelListener::updateReadings()	0	static
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:40:18:virtual void ModelListener::updateLiveGraph()	0	static
+../../TouchGFX/gui/include/gui/settings_screen_screen/settings_screenPresenter.hpp:28:13:settings_screenPresenter::~settings_screenPresenter()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenPresenter.cpp:10:6:virtual void settings_screenPresenter::activate()	0	static
+../../TouchGFX/gui/include/gui/settings_screen_screen/settings_screenPresenter.hpp:28:13:virtual settings_screenPresenter::~settings_screenPresenter()	8	static
+../../TouchGFX/gui/include/gui/settings_screen_screen/settings_screenPresenter.hpp:28:13:virtual void* settings_screenPresenter::_ZThn4_N24settings_screenPresenterD1Ev()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenPresenter.cpp:4:1:settings_screenPresenter::settings_screenPresenter(settings_screenView&)	0	static

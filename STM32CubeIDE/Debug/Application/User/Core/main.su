@@ -1,0 +1,5 @@
+C:/TouchGFXProjects/frog_tank/Core/Src/main.c:738:6:StartDefaultTask	8	static
+C:/TouchGFXProjects/frog_tank/Core/Src/main.c:237:6:SystemClock_Config	88	static
+C:/TouchGFXProjects/frog_tank/Core/Src/main.c:129:5:main	120	static,ignoring_inline_asm
+C:/TouchGFXProjects/frog_tank/Core/Src/main.c:794:6:HAL_TIM_PeriodElapsedCallback	0	static
+C:/TouchGFXProjects/frog_tank/Core/Src/main.c:811:6:Error_Handler	0	static

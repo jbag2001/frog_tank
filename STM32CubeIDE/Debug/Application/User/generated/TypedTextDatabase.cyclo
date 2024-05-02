@@ -1,0 +1,6 @@
+C:/TouchGFXProjects/frog_tank/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:86:43:const touchgfx::TypedText::TypedTextData* TypedTextDatabase::getInstance(touchgfx::LanguageId)	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:91:10:uint16_t TypedTextDatabase::getInstanceSize()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:96:24:const touchgfx::Font** TypedTextDatabase::getFonts()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:101:23:const touchgfx::Font* TypedTextDatabase::setFont(touchgfx::FontId, const touchgfx::Font*)	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:108:6:void TypedTextDatabase::resetFont(touchgfx::FontId)	5
+C:/TouchGFXProjects/frog_tank/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:126:1:cpp)	1

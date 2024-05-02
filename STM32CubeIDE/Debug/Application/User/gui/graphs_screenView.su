@@ -1,0 +1,20 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:20:6:virtual void graphs_screenView::tearDownScreen()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:154:6:virtual void graphs_screenView::graphLive()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:159:6:virtual void graphs_screenView::graphHour()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:164:6:virtual void graphs_screenView::graphDay()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:169:6:virtual void graphs_screenView::graphMonth()	0	static
+../../TouchGFX/gui/include/gui/graphs_screen_screen/graphs_screenView.hpp:11:13:graphs_screenView::~graphs_screenView()	8	static
+../../TouchGFX/gui/include/gui/graphs_screen_screen/graphs_screenView.hpp:11:13:virtual graphs_screenView::~graphs_screenView()	8	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:85:6:virtual void graphs_screenView::updateLiveGraph()	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:440:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeX(int, int)	4	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:507:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeY(int, int)	4	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:4:1:graphs_screenView::graphs_screenView()	8	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:9:6:virtual void graphs_screenView::setupScreen()	8	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:94:6:virtual void graphs_screenView::setTitle()	8	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:106:6:virtual void graphs_screenView::setYLabel()	8	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:114:6:virtual void graphs_screenView::setXLabel()	8	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:126:6:virtual void graphs_screenView::updateButtons()	8	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenView.cpp:26:6:virtual void graphs_screenView::updateGraph()	32	static

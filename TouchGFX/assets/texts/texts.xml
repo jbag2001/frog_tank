@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.23.0">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_TGRS" Alignment="Right" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_I8B1" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Live Reading</Translation>
+      </Text>
+      <Text Id="__SingleUse_CXAN" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Live</Translation>
+      </Text>
+      <Text Id="__SingleUse_3FAH" Alignment="Right" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_WGUQ" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Cold Zone Temperature</Translation>
+      </Text>
+      <Text Id="__SingleUse_HMU1" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Hot Zone Humidity</Translation>
+      </Text>
+      <Text Id="__SingleUse_YDNV" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Hot Zone Temperature</Translation>
+      </Text>
+      <Text Id="title_type_wc" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="title_zone_wc" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_HDN7" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Last 60 Minutes</Translation>
+      </Text>
+      <Text Id="__SingleUse_OBH7" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Last 30 Days</Translation>
+      </Text>
+      <Text Id="__SingleUse_H8Z4" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Humidity (%)</Translation>
+      </Text>
+      <Text Id="title_type" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="title_zone" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_HD0M" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Last 24 Hours</Translation>
+      </Text>
+      <Text Id="__SingleUse_PXSR" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Temperature (F°)</Translation>
+      </Text>
+      <Text Id="__SingleUse_NHGP" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Cold Zone Humidity</Translation>
+      </Text>
+      <Text Id="__SingleUse_3I7S" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Month</Translation>
+      </Text>
+      <Text Id="__SingleUse_M7F2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Day</Translation>
+      </Text>
+      <Text Id="__SingleUse_RA0L" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Hour</Translation>
+      </Text>
+      <Text Id="__SingleUse_YVFU" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_8UZJ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_90P6" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_B5YH" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_8CS9" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">12</Translation>
+      </Text>
+      <Text Id="__SingleUse_9XMV" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">12</Translation>
+      </Text>
+      <Text Id="__SingleUse_U7HD" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">75</Translation>
+      </Text>
+      <Text Id="__SingleUse_KJOH" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">85</Translation>
+      </Text>
+      <Text Id="__SingleUse_GWRZ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">(Text goes here from code)</Translation>
+      </Text>
+      <Text Id="__SingleUse_R0KW" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Humidity: </Translation>
+      </Text>
+      <Text Id="__SingleUse_6SPS" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;%</Translation>
+      </Text>
+      <Text Id="__SingleUse_7R3W" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Misting</Translation>
+      </Text>
+      <Text Id="__SingleUse_BN13" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Heating</Translation>
+      </Text>
+      <Text Id="__SingleUse_7VAJ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Temperature: </Translation>
+      </Text>
+      <Text Id="__SingleUse_NLOW" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;°F</Translation>
+      </Text>
+      <Text Id="__SingleUse_E1BR" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Alerts</Translation>
+      </Text>
+      <Text Id="__SingleUse_U65J" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Settings</Translation>
+      </Text>
+      <Text Id="__SingleUse_C8EY" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_O9MS" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_6S60" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Minute: </Translation>
+      </Text>
+      <Text Id="__SingleUse_WK62" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Hour: </Translation>
+      </Text>
+      <Text Id="__SingleUse_4PGN" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">%</Translation>
+      </Text>
+      <Text Id="__SingleUse_8KM9" Alignment="Right" TypographyId="Num_Disp">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_INAU" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">°F</Translation>
+      </Text>
+      <Text Id="__SingleUse_2669" Alignment="Right" TypographyId="Num_Disp">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_C7JE" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">%</Translation>
+      </Text>
+      <Text Id="__SingleUse_F5H7" Alignment="Right" TypographyId="Num_Disp">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_EA1A" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">°F</Translation>
+      </Text>
+      <Text Id="__SingleUse_UB4U" Alignment="Right" TypographyId="Num_Disp">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_F8LB" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_OP3B" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Cold Zone</Translation>
+      </Text>
+      <Text Id="__SingleUse_OV86" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Hot Zone</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="-., 0123456789" />
+    <Typography Id="Num_Disp" Font="verdana.ttf" Size="70" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789 :APM" />
+    <Typography Id="Typography_00" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>

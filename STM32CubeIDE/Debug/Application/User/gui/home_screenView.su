@@ -1,0 +1,17 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenView.cpp:20:6:virtual void home_screenView::tearDownScreen()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenView.cpp:61:6:virtual void home_screenView::set_hot_temp()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenView.cpp:66:6:virtual void home_screenView::set_hot_hum()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenView.cpp:71:6:virtual void home_screenView::set_cold_temp()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenView.cpp:76:6:virtual void home_screenView::set_cold_hum()	0	static
+../../TouchGFX/gui/include/gui/home_screen_screen/home_screenView.hpp:11:13:home_screenView::~home_screenView()	8	static
+../../TouchGFX/gui/include/gui/home_screen_screen/home_screenView.hpp:11:13:virtual home_screenView::~home_screenView()	8	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenView.cpp:49:6:virtual void home_screenView::updateReadings(int, int, int, int)	24	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenView.cpp:3:1:home_screenView::home_screenView()	8	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenView.cpp:8:6:virtual void home_screenView::setupScreen()	24	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenView.cpp:25:6:virtual void home_screenView::updateClock(int, int)	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenView.cpp:29:6:virtual void home_screenView::updateMistIcon(bool, bool)	8	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenView.cpp:39:6:virtual void home_screenView::updateHeatIcon(bool, bool)	8	static

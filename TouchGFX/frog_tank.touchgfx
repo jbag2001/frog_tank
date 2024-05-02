@@ -1,0 +1,2696 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "home_screen",
+        "CanvasBufferSize": 7200,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "bg",
+            "Width": 480,
+            "Height": 272,
+            "LockPosition": true,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "hot_bg",
+            "X": 10,
+            "Y": 10,
+            "Width": 170,
+            "Height": 253,
+            "LockPosition": true,
+            "Color": {
+              "Red": 246,
+              "Green": 157,
+              "Blue": 44
+            },
+            "BorderSize": 1
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "cold_bg",
+            "X": 190,
+            "Y": 10,
+            "Width": 170,
+            "Height": 253,
+            "LockPosition": true,
+            "Color": {
+              "Red": 58,
+              "Green": 149,
+              "Blue": 221
+            },
+            "BorderSize": 1
+          },
+          {
+            "Type": "TextArea",
+            "Name": "hot_label",
+            "X": 49,
+            "Y": 126,
+            "Width": 93,
+            "Height": 24,
+            "TextId": "__SingleUse_OV86",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "cold_label",
+            "X": 225,
+            "Y": 126,
+            "Width": 101,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_OP3B",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "dg_clk_btn",
+            "X": 135,
+            "Y": 5,
+            "Width": 100,
+            "Height": 25,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 100,
+                "Height": 25,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "dg_clk_bg",
+            "X": 135,
+            "Y": 5,
+            "Width": 100,
+            "Height": 25,
+            "LockPosition": true,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderSize": 1
+          },
+          {
+            "Type": "DigitalClock",
+            "Name": "dg_clk",
+            "X": 135,
+            "Y": 5,
+            "Width": 100,
+            "Height": 25,
+            "LockPosition": true,
+            "TextId": "__SingleUse_F8LB",
+            "DisplayLeadingZeroForHourIndicator": true,
+            "UseAmPm": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "hot_hum_disp",
+            "X": 30,
+            "Y": 165,
+            "Width": 90,
+            "Height": 85,
+            "LockPosition": true,
+            "TextId": "__SingleUse_UB4U",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_90P6",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "hot_temp_disp",
+            "X": 30,
+            "Y": 30,
+            "Width": 90,
+            "Height": 85,
+            "LockPosition": true,
+            "TextId": "__SingleUse_F5H7",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_B5YH",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "hot_temp_sup",
+            "X": 119,
+            "Y": 45,
+            "Width": 45,
+            "Height": 49,
+            "LockPosition": true,
+            "TextId": "__SingleUse_EA1A",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "hot_hum_sup",
+            "X": 120,
+            "Y": 180,
+            "Width": 43,
+            "Height": 49,
+            "LockPosition": true,
+            "TextId": "__SingleUse_C7JE",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "cold_hum_sup",
+            "X": 305,
+            "Y": 180,
+            "Width": 43,
+            "Height": 49,
+            "LockPosition": true,
+            "TextId": "__SingleUse_4PGN",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "cold_temp_disp",
+            "X": 215,
+            "Y": 30,
+            "Width": 90,
+            "Height": 85,
+            "LockPosition": true,
+            "TextId": "__SingleUse_2669",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_YVFU",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "cold_temp_sup",
+            "X": 305,
+            "Y": 45,
+            "Width": 45,
+            "Height": 49,
+            "LockPosition": true,
+            "TextId": "__SingleUse_INAU",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "cold_hum_disp",
+            "X": 215,
+            "Y": 165,
+            "Width": 90,
+            "Height": 85,
+            "LockPosition": true,
+            "TextId": "__SingleUse_8KM9",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_8UZJ",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "alerts_icon",
+            "X": 381,
+            "Y": 172,
+            "Width": 80,
+            "Height": 80,
+            "Visible": false,
+            "LockPosition": true,
+            "Filename": "alert_icon.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "alerts_btn",
+            "X": 381,
+            "Y": 172,
+            "Width": 80,
+            "Height": 80,
+            "Visible": false,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 80,
+                "Height": 80,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Clickable": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "settings_icon",
+            "X": 366,
+            "Y": 10,
+            "Width": 110,
+            "Height": 110,
+            "LockPosition": true,
+            "Filename": "settings_icon.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "settings_btn",
+            "X": 381,
+            "Y": 25,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 80,
+                "Height": 80,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Clickable": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "mist_icn",
+            "X": 431,
+            "Y": 122,
+            "Width": 30,
+            "Height": 30,
+            "LockPosition": true,
+            "Filename": "sprinkler.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Circle",
+            "Name": "mist_circ",
+            "X": 424,
+            "Y": 114,
+            "Width": 45,
+            "Height": 45,
+            "LockPosition": true,
+            "Color": {
+              "Red": 58,
+              "Green": 149,
+              "Blue": 221
+            },
+            "CenterX": 22.0,
+            "CenterY": 22.0,
+            "Radius": 20.0,
+            "LineWidth": 3.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Circle",
+            "Name": "mist_disb_circ",
+            "X": 424,
+            "Y": 114,
+            "Width": 45,
+            "Height": 45,
+            "LockPosition": true,
+            "Color": {
+              "Red": 250,
+              "Green": 82,
+              "Blue": 82
+            },
+            "CenterX": 22.0,
+            "CenterY": 22.0,
+            "Radius": 20.0,
+            "LineWidth": 3.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Line",
+            "Name": "mist_disb_line",
+            "X": 424,
+            "Y": 114,
+            "Width": 45,
+            "Height": 43,
+            "LockPosition": true,
+            "Color": {
+              "Red": 250,
+              "Green": 82,
+              "Blue": 82
+            },
+            "StartX": 8.0,
+            "StartY": 8.0,
+            "EndX": 35.0,
+            "EndY": 35.0,
+            "LineWidth": 3.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "heat_icn",
+            "X": 381,
+            "Y": 122,
+            "Width": 30,
+            "Height": 30,
+            "LockPosition": true,
+            "Filename": "lamp.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Circle",
+            "Name": "heat_circ",
+            "X": 374,
+            "Y": 114,
+            "Width": 45,
+            "Height": 45,
+            "LockPosition": true,
+            "Color": {
+              "Red": 58,
+              "Green": 149,
+              "Blue": 221
+            },
+            "CenterX": 22.0,
+            "CenterY": 22.0,
+            "Radius": 20.0,
+            "LineWidth": 3.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Circle",
+            "Name": "heat_disb_circ",
+            "X": 374,
+            "Y": 114,
+            "Width": 45,
+            "Height": 45,
+            "LockPosition": true,
+            "Color": {
+              "Red": 250,
+              "Green": 82,
+              "Blue": 82
+            },
+            "CenterX": 22.0,
+            "CenterY": 22.0,
+            "Radius": 20.0,
+            "LineWidth": 3.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Line",
+            "Name": "heat_disb_line",
+            "X": 374,
+            "Y": 114,
+            "Width": 45,
+            "Height": 43,
+            "LockPosition": true,
+            "Color": {
+              "Red": 250,
+              "Green": 82,
+              "Blue": 82
+            },
+            "StartX": 8.0,
+            "StartY": 8.0,
+            "EndX": 35.0,
+            "EndY": 35.0,
+            "LineWidth": 3.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "cold_hum_btn",
+            "X": 200,
+            "Y": 180,
+            "Width": 150,
+            "Height": 60,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 150,
+                "Height": 60,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "cold_temp_btn",
+            "X": 200,
+            "Y": 45,
+            "Width": 150,
+            "Height": 60,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 150,
+                "Height": 60,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "hot_hum_btn",
+            "X": 20,
+            "Y": 180,
+            "Width": 150,
+            "Height": 60,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 150,
+                "Height": 60,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "hot_temp_btn",
+            "X": 20,
+            "Y": 45,
+            "Width": 150,
+            "Height": 60,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 150,
+                "Height": 60,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "remove_frog",
+            "X": 371,
+            "Y": 160,
+            "Width": 100,
+            "Height": 100,
+            "Filename": "frog.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "go_settings",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "settings_btn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "settings_screen"
+            }
+          },
+          {
+            "InteractionName": "go_alerts",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "alerts_btn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "alerts_screen"
+            }
+          },
+          {
+            "InteractionName": "go_clock",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "dg_clk_btn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "clock_screen"
+            }
+          },
+          {
+            "InteractionName": "go_graph_hot_temp",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "hot_temp_btn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "graphs_screen"
+            }
+          },
+          {
+            "InteractionName": "go_graph_hot_hum",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "hot_hum_btn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "graphs_screen"
+            }
+          },
+          {
+            "InteractionName": "go_graph_cold_temp",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "cold_temp_btn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "graphs_screen"
+            }
+          },
+          {
+            "InteractionName": "go_graph_cold_hum",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "cold_hum_btn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "graphs_screen"
+            }
+          },
+          {
+            "InteractionName": "set_hot_temp",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "hot_temp_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "set_hot_temp"
+            }
+          },
+          {
+            "InteractionName": "set_hot_hum",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "hot_hum_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "set_hot_hum"
+            }
+          },
+          {
+            "InteractionName": "set_cold_temp",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "cold_temp_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "set_cold_temp"
+            }
+          },
+          {
+            "InteractionName": "set_cold_hum",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "cold_hum_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "set_cold_hum"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "clock_screen",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "bg",
+            "Width": 480,
+            "Height": 272,
+            "LockPosition": true,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Slider",
+            "Name": "minute_slider",
+            "X": 66,
+            "Y": 196,
+            "Width": 236,
+            "Height": 36,
+            "LockPosition": true,
+            "IsHorizontalSlider": true,
+            "BackgroundUnselected": "__generated\\alternate_theme_images_widgets_slider_horizontal_thick_track_small.png",
+            "BackgroundSelected": "__generated\\alternate_theme_images_widgets_slider_horizontal_thick_filler_small.png",
+            "Indicator": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
+            "BackgroundX": 16,
+            "BackgroundY": 11,
+            "IndicatorMax": 200,
+            "ValueMax": 59
+          },
+          {
+            "Type": "Slider",
+            "Name": "hour_slider",
+            "X": 66,
+            "Y": 76,
+            "Width": 236,
+            "Height": 36,
+            "LockPosition": true,
+            "IsHorizontalSlider": true,
+            "BackgroundUnselected": "__generated\\alternate_theme_images_widgets_slider_horizontal_thick_track_small.png",
+            "BackgroundSelected": "__generated\\alternate_theme_images_widgets_slider_horizontal_thick_filler_small.png",
+            "Indicator": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
+            "BackgroundX": 16,
+            "BackgroundY": 11,
+            "IndicatorMax": 200,
+            "ValueMax": 23
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "cancel_icon",
+            "X": 366,
+            "Y": 36,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "Filename": "close_icon.png",
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Clickable": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "confirm_icon",
+            "X": 366,
+            "Y": 156,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "Filename": "check_icon.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Image",
+            "Name": "min_bwd",
+            "X": 32,
+            "Y": 198,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "RelativeFilename": "back.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "hour_bwd",
+            "X": 32,
+            "Y": 78,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "RelativeFilename": "back.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "min_fwd",
+            "X": 304,
+            "Y": 198,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "RelativeFilename": "next.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "hour_fwd",
+            "X": 304,
+            "Y": 78,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "RelativeFilename": "next.png"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "hour_bwd_btn",
+            "X": 32,
+            "Y": 78,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 32,
+                "Height": 32,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "hour_fwd_btn",
+            "X": 304,
+            "Y": 78,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 32,
+                "Height": 32,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "min_bwd_btn",
+            "X": 32,
+            "Y": 198,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 32,
+                "Height": 32,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "min_fwd_btn",
+            "X": 304,
+            "Y": 198,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 32,
+                "Height": 32,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "cancel_btn",
+            "X": 366,
+            "Y": 38,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 80,
+                "Height": 80,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "confirm_btn",
+            "X": 366,
+            "Y": 156,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 80,
+                "Height": 80,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "hour_label",
+            "X": 125,
+            "Y": 58,
+            "Width": 65,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_WK62",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "hour_text",
+            "X": 190,
+            "Y": 58,
+            "Width": 26,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_C8EY",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_8CS9",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "min_label",
+            "X": 119,
+            "Y": 176,
+            "Width": 84,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_6S60",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "min_text",
+            "X": 203,
+            "Y": 176,
+            "Width": 26,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_O9MS",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_9XMV",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "cancel_go_home",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "cancel_btn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "home_screen"
+            }
+          },
+          {
+            "InteractionName": "confirm_go_home",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "confirm_btn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "home_screen"
+            }
+          },
+          {
+            "InteractionName": "hourChange",
+            "Trigger": {
+              "Type": "TriggerSliderValueChanged",
+              "TriggerComponent": "hour_slider"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "hourChange"
+            }
+          },
+          {
+            "InteractionName": "minChange",
+            "Trigger": {
+              "Type": "TriggerSliderValueChanged",
+              "TriggerComponent": "minute_slider"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "minChange"
+            }
+          },
+          {
+            "InteractionName": "lowHour",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "hour_bwd_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "lowHour"
+            }
+          },
+          {
+            "InteractionName": "incHour",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "hour_fwd_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "incHour"
+            }
+          },
+          {
+            "InteractionName": "lowMin",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "min_bwd_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "lowMin"
+            }
+          },
+          {
+            "InteractionName": "incMin",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "min_fwd_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "incMin"
+            }
+          },
+          {
+            "InteractionName": "updateTime",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "confirm_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "updateTime"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "settings_screen",
+        "CanvasBufferSize": 7200,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "bg",
+            "Width": 480,
+            "Height": 272,
+            "LockPosition": true,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "close_icon",
+            "X": 395,
+            "Y": 5,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "Filename": "close_icon.png",
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Clickable": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "close_btn",
+            "X": 395,
+            "Y": 4,
+            "Width": 80,
+            "Height": 81,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 80,
+                "Height": 81,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Clickable": true
+          },
+          {
+            "Type": "Line",
+            "Name": "header_bar",
+            "Width": 395,
+            "Height": 58,
+            "LockPosition": true,
+            "StartX": 10.0,
+            "StartY": 40.0,
+            "EndX": 385.0,
+            "EndY": 40.0,
+            "LineWidth": 1.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "header",
+            "X": 16,
+            "Y": 15,
+            "Width": 82,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_U65J",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "heat_label",
+            "X": 92,
+            "Y": 56,
+            "Width": 77,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_BN13",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "heat_toggle",
+            "X": 16,
+            "Y": 51,
+            "Width": 62,
+            "Height": 34,
+            "LockPosition": true,
+            "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_small_rounded_small_off_light.png",
+            "Released": "__generated\\alternate_theme_images_widgets_togglebutton_small_rounded_small_on_normal.png",
+            "Preset": "alternate_theme\\presets\\togglebutton\\small\\rounded_neutral.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "mist_label",
+            "X": 92,
+            "Y": 97,
+            "Width": 70,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_7R3W",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "mist_toggle",
+            "X": 16,
+            "Y": 92,
+            "Width": 62,
+            "Height": 34,
+            "LockPosition": true,
+            "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_small_rounded_small_off_light.png",
+            "Released": "__generated\\alternate_theme_images_widgets_togglebutton_small_rounded_small_on_normal.png",
+            "Preset": "alternate_theme\\presets\\togglebutton\\small\\rounded_neutral.json"
+          },
+          {
+            "Type": "Slider",
+            "Name": "temp_slider",
+            "X": 48,
+            "Y": 160,
+            "Width": 236,
+            "Height": 36,
+            "LockPosition": true,
+            "IsHorizontalSlider": true,
+            "BackgroundUnselected": "__generated\\alternate_theme_images_widgets_slider_horizontal_thick_track_small.png",
+            "BackgroundSelected": "__generated\\alternate_theme_images_widgets_slider_horizontal_thick_filler_small.png",
+            "Indicator": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
+            "BackgroundX": 16,
+            "BackgroundY": 11,
+            "IndicatorMax": 200,
+            "ValueMax": 80,
+            "ValueMin": 65,
+            "InitValue": 65
+          },
+          {
+            "Type": "Image",
+            "Name": "temp_bwd",
+            "X": 14,
+            "Y": 164,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "RelativeFilename": "back.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "temp_fwd",
+            "X": 286,
+            "Y": 162,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "RelativeFilename": "next.png"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "temp_bwd_btn",
+            "X": 14,
+            "Y": 162,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 32,
+                "Height": 32,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "temp_fwd_btn",
+            "X": 286,
+            "Y": 162,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 32,
+                "Height": 32,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "temp_label",
+            "X": 48,
+            "Y": 136,
+            "Width": 144,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_7VAJ",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "temp_val",
+            "X": 192,
+            "Y": 136,
+            "Width": 49,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_NLOW",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_U7HD",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "Slider",
+            "Name": "hum_slider",
+            "X": 48,
+            "Y": 228,
+            "Width": 236,
+            "Height": 36,
+            "LockPosition": true,
+            "IsHorizontalSlider": true,
+            "BackgroundUnselected": "__generated\\alternate_theme_images_widgets_slider_horizontal_thick_track_small.png",
+            "BackgroundSelected": "__generated\\alternate_theme_images_widgets_slider_horizontal_thick_filler_small.png",
+            "Indicator": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_pressed.png",
+            "BackgroundX": 16,
+            "BackgroundY": 11,
+            "IndicatorMax": 200,
+            "ValueMax": 90,
+            "ValueMin": 20,
+            "InitValue": 20
+          },
+          {
+            "Type": "Image",
+            "Name": "hum_bwd",
+            "X": 14,
+            "Y": 232,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "RelativeFilename": "back.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "hum_fwd",
+            "X": 286,
+            "Y": 230,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "RelativeFilename": "next.png"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "hum_bwd_btn",
+            "X": 14,
+            "Y": 230,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 32,
+                "Height": 32,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "hum_fwd_btn",
+            "X": 286,
+            "Y": 230,
+            "Width": 32,
+            "Height": 32,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 32,
+                "Height": 32,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "hum_label",
+            "X": 48,
+            "Y": 204,
+            "Width": 105,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_R0KW",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "hum_val",
+            "X": 149,
+            "Y": 204,
+            "Width": 48,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_6SPS",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_KJOH",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "goHome",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "close_btn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "home_screen"
+            }
+          },
+          {
+            "InteractionName": "toggleHeating",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "heat_toggle"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "toggleHeating"
+            }
+          },
+          {
+            "InteractionName": "toggleMisting",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "mist_toggle"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "toggleMisting"
+            }
+          },
+          {
+            "InteractionName": "lowTemp",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "temp_bwd_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "lowTemp"
+            }
+          },
+          {
+            "InteractionName": "incTemp",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "temp_fwd_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "incTemp"
+            }
+          },
+          {
+            "InteractionName": "lowHum",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "hum_bwd_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "lowHum"
+            }
+          },
+          {
+            "InteractionName": "incHum",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "hum_fwd_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "incHum"
+            }
+          },
+          {
+            "InteractionName": "tempChange",
+            "Trigger": {
+              "Type": "TriggerSliderValueChanged",
+              "TriggerComponent": "temp_slider"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "tempChange"
+            }
+          },
+          {
+            "InteractionName": "humChange",
+            "Trigger": {
+              "Type": "TriggerSliderValueChanged",
+              "TriggerComponent": "hum_slider"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "humChange"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action1"
+          }
+        ]
+      },
+      {
+        "Name": "alerts_screen",
+        "CanvasBufferSize": 7200,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "bg",
+            "Width": 480,
+            "Height": 272,
+            "LockPosition": true,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "close_icon",
+            "X": 395,
+            "Y": 5,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "Filename": "close_icon.png",
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Clickable": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "close_btn",
+            "X": 395,
+            "Y": 4,
+            "Width": 80,
+            "Height": 81,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 80,
+                "Height": 81,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Clickable": true
+          },
+          {
+            "Type": "Line",
+            "Name": "header_bar",
+            "Width": 395,
+            "Height": 58,
+            "LockPosition": true,
+            "StartX": 10.0,
+            "StartY": 40.0,
+            "EndX": 385.0,
+            "EndY": 40.0,
+            "LineWidth": 1.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "header",
+            "X": 16,
+            "Y": 15,
+            "Width": 58,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_E1BR",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "alert_text",
+            "X": 16,
+            "Y": 46,
+            "Width": 273,
+            "Height": 24,
+            "TextId": "__SingleUse_GWRZ",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "go_home",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "close_btn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "home_screen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "graphs_screen",
+        "CanvasBufferSize": 7200,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "bg",
+            "Width": 480,
+            "Height": 272,
+            "LockPosition": true,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "live_graph",
+            "X": 8,
+            "Y": 23,
+            "Width": 467,
+            "Height": 237,
+            "Visible": false,
+            "LockPosition": true,
+            "DataSeed": -1557095852,
+            "NumberOfValues": 60,
+            "MaxY": 100.0,
+            "MinY": 30.0,
+            "Precision": "1",
+            "LastIndex": 59,
+            "XAxisScale": 1.0,
+            "LabelSizeTop": 3,
+            "LabelSizeLeft": 18,
+            "PaddingTop": 3,
+            "PaddingBottom": 3,
+            "PaddingLeft": 3,
+            "PaddingRight": 3,
+            "GraphType": "GraphScroll",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 222,
+                "Green": 222,
+                "Blue": 222
+              },
+              "Interval": 2.0,
+              "LineWidth": 1
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 222,
+                "Green": 222,
+                "Blue": 222
+              },
+              "Interval": 5.0,
+              "LineWidth": 1
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "DecimalSeparator": "Point",
+              "TextId": "__SingleUse_TGRS",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
+          },
+          {
+            "Type": "StaticGraph",
+            "Name": "graph",
+            "X": 8,
+            "Y": 23,
+            "Width": 467,
+            "Height": 237,
+            "DataSeed": -1317718577,
+            "NumberOfValues": 60,
+            "MaxX": 60.0,
+            "PrecisionX": "1",
+            "MaxY": 100.0,
+            "MinY": 90.0,
+            "PrecisionY": "1",
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "LabelSizeTop": 3,
+            "LabelSizeLeft": 18,
+            "PaddingTop": 3,
+            "PaddingBottom": 3,
+            "PaddingLeft": 3,
+            "PaddingRight": 3,
+            "GraphDrawers": [
+              {
+                "Type": "DotsDrawer",
+                "DotWidth": 6,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              },
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 224,
+                "Green": 224,
+                "Blue": 224
+              },
+              "Interval": 2.0,
+              "LineWidth": 1
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 224,
+                "Green": 224,
+                "Blue": 224
+              },
+              "Interval": 1.0,
+              "LineWidth": 1
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 2.0,
+              "DecimalSeparator": "Point",
+              "TextId": "__SingleUse_3FAH",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "close_icon",
+            "X": 395,
+            "Y": 5,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "Filename": "close_icon.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "close_btn",
+            "X": 395,
+            "Y": 5,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 80,
+                "Height": 80,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Clickable": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "month_btn",
+            "X": 231,
+            "Y": 5,
+            "Width": 65,
+            "Height": 25,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 65,
+                "Height": 25,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "month_bg",
+            "X": 231,
+            "Y": 5,
+            "Width": 65,
+            "Height": 25,
+            "LockPosition": true,
+            "Color": {
+              "Red": 240,
+              "Green": 240,
+              "Blue": 240
+            },
+            "BorderSize": 1
+          },
+          {
+            "Type": "TextArea",
+            "Name": "month_label",
+            "X": 232,
+            "Y": 5,
+            "Width": 63,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_3I7S",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "day_btn",
+            "X": 164,
+            "Y": 5,
+            "Width": 60,
+            "Height": 25,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 60,
+                "Height": 25,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "day_bg",
+            "X": 164,
+            "Y": 5,
+            "Width": 60,
+            "Height": 25,
+            "LockPosition": true,
+            "Color": {
+              "Red": 57,
+              "Green": 167,
+              "Blue": 206
+            },
+            "BorderSize": 1
+          },
+          {
+            "Type": "TextArea",
+            "Name": "day_label",
+            "X": 175,
+            "Y": 5,
+            "Width": 39,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_M7F2",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "hour_btn",
+            "X": 97,
+            "Y": 5,
+            "Width": 60,
+            "Height": 25,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 60,
+                "Height": 25,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "hour_bg",
+            "X": 97,
+            "Y": 5,
+            "Width": 60,
+            "Height": 25,
+            "LockPosition": true,
+            "Color": {
+              "Red": 240,
+              "Green": 240,
+              "Blue": 240
+            },
+            "BorderSize": 1
+          },
+          {
+            "Type": "TextArea",
+            "Name": "hour_label",
+            "X": 103,
+            "Y": 5,
+            "Width": 49,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_RA0L",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "live_btn",
+            "X": 30,
+            "Y": 5,
+            "Width": 60,
+            "Height": 25,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 60,
+                "Height": 25,
+                "LockToFlexButtonSize": true,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "live_bg",
+            "X": 30,
+            "Y": 5,
+            "Width": 60,
+            "Height": 25,
+            "LockPosition": true,
+            "Color": {
+              "Red": 240,
+              "Green": 240,
+              "Blue": 240
+            },
+            "BorderSize": 1
+          },
+          {
+            "Type": "TextArea",
+            "Name": "live_label",
+            "X": 40,
+            "Y": 5,
+            "Width": 40,
+            "Height": 24,
+            "LockPosition": true,
+            "TextId": "__SingleUse_CXAN",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "graph_title_hot_temp",
+            "X": 90,
+            "Y": 257,
+            "Width": 115,
+            "Height": 12,
+            "LockPosition": true,
+            "TextId": "__SingleUse_YDNV",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "graph_title_hot_hum",
+            "X": 90,
+            "Y": 257,
+            "Width": 97,
+            "Height": 12,
+            "Visible": false,
+            "LockPosition": true,
+            "TextId": "__SingleUse_HMU1",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "graph_title_cold_temp",
+            "X": 90,
+            "Y": 257,
+            "Width": 119,
+            "Height": 12,
+            "Visible": false,
+            "LockPosition": true,
+            "TextId": "__SingleUse_WGUQ",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "graph_title_cold_hum",
+            "X": 90,
+            "Y": 257,
+            "Width": 101,
+            "Height": 12,
+            "Visible": false,
+            "LockPosition": true,
+            "TextId": "__SingleUse_NHGP",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "temp_label",
+            "X": 2,
+            "Y": 98,
+            "Width": 12,
+            "Height": 89,
+            "LockPosition": true,
+            "TextId": "__SingleUse_PXSR",
+            "TextRotation": "270",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "hum_label",
+            "X": 2,
+            "Y": 107,
+            "Width": 12,
+            "Height": 71,
+            "Visible": false,
+            "LockPosition": true,
+            "TextId": "__SingleUse_H8Z4",
+            "TextRotation": "270",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "time_month_label",
+            "X": 280,
+            "Y": 257,
+            "Width": 66,
+            "Height": 12,
+            "Visible": false,
+            "LockPosition": true,
+            "TextId": "__SingleUse_OBH7",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "time_day_label",
+            "X": 280,
+            "Y": 257,
+            "Width": 70,
+            "Height": 12,
+            "LockPosition": true,
+            "TextId": "__SingleUse_HD0M",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "time_hour_label",
+            "X": 280,
+            "Y": 257,
+            "Width": 79,
+            "Height": 12,
+            "Visible": false,
+            "LockPosition": true,
+            "TextId": "__SingleUse_HDN7",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "time_live_label",
+            "X": 280,
+            "Y": 257,
+            "Width": 65,
+            "Height": 12,
+            "Visible": false,
+            "LockPosition": true,
+            "TextId": "__SingleUse_I8B1",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "go_home",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "close_btn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "home_screen"
+            }
+          },
+          {
+            "InteractionName": "graphDay",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "day_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "graphDay"
+            }
+          },
+          {
+            "InteractionName": "graphHour",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "hour_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "graphHour"
+            }
+          },
+          {
+            "InteractionName": "graphMonth",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "month_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "graphMonth"
+            }
+          },
+          {
+            "InteractionName": "graphLive",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "live_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "graphLive"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "frog_tank",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "home_screen",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 272
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommand": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommand": "make -f ../gcc/Makefile flash -j8",
+    "FlashTargetIntCommandOverride": "make -f ../gcc/Makefile intflash -j8",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F7",
+    "SubFamily": "STM32F7x6",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../STM32F746G_DISCO.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts",
+      "Video"
+    ]
+  },
+  "Version": "4.23.0",
+  "CreatedBy": "4.23.0"
+}

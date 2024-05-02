@@ -1,0 +1,18 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenView.cpp:18:6:virtual void clock_screenView::tearDownScreen()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenView.cpp:61:6:virtual void clock_screenView::updateTime()	1
+../../TouchGFX/gui/include/gui/clock_screen_screen/clock_screenView.hpp:11:13:clock_screenView::~clock_screenView()	1
+../../TouchGFX/gui/include/gui/clock_screen_screen/clock_screenView.hpp:11:13:virtual clock_screenView::~clock_screenView()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenView.cpp:3:1:clock_screenView::clock_screenView()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenView.cpp:66:6:void clock_screenView::setHourLabel(int)	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenView.cpp:51:6:virtual void clock_screenView::hourChange(int)	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenView.cpp:71:6:void clock_screenView::setMinLabel(int)	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenView.cpp:56:6:virtual void clock_screenView::minChange(int)	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenView.cpp:8:6:virtual void clock_screenView::setupScreen()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenView.cpp:23:6:virtual void clock_screenView::lowHour()	2
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenView.cpp:30:6:virtual void clock_screenView::incHour()	2
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenView.cpp:37:6:virtual void clock_screenView::lowMin()	2
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/clock_screen_screen/clock_screenView.cpp:44:6:virtual void clock_screenView::incMin()	2

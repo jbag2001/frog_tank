@@ -1,0 +1,9 @@
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:22:18:virtual void ModelListener::updateClock()	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::updateIcons()	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:34:18:virtual void ModelListener::updateReadings()	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:40:18:virtual void ModelListener::updateLiveGraph()	1
+../../TouchGFX/gui/include/gui/alerts_screen_screen/alerts_screenPresenter.hpp:28:13:alerts_screenPresenter::~alerts_screenPresenter()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/alerts_screen_screen/alerts_screenPresenter.cpp:10:6:virtual void alerts_screenPresenter::activate()	1
+../../TouchGFX/gui/include/gui/alerts_screen_screen/alerts_screenPresenter.hpp:28:13:virtual alerts_screenPresenter::~alerts_screenPresenter()	1
+../../TouchGFX/gui/include/gui/alerts_screen_screen/alerts_screenPresenter.hpp:28:13:virtual void* alerts_screenPresenter::_ZThn4_N22alerts_screenPresenterD1Ev()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/alerts_screen_screen/alerts_screenPresenter.cpp:4:1:alerts_screenPresenter::alerts_screenPresenter(alerts_screenView&)	1

@@ -1,0 +1,12 @@
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/model/Model.cpp:298:6:virtual void Model::sensorLogic(int)	8
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/model/Model.cpp:321:6:virtual void Model::initI2C()	4
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/model/Model.cpp:348:6:virtual void Model::sensorSelect(bool)	2
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/model/Model.cpp:364:6:virtual void Model::sensorPrime()	2
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/model/Model.cpp:376:6:virtual void Model::sensorRead(bool)	3
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/model/Model.cpp:406:6:virtual void Model::initGPIOs()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/model/Model.cpp:431:6:virtual void Model::mistGPIO()	2
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/model/Model.cpp:441:6:virtual void Model::heatGPIO()	2
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/model/Model.cpp:9:1:Model::Model()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/model/Model.cpp:47:6:void Model::tick()	31
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/model/Model.cpp:448:6:int* Model::getGraphData(bool, bool, int)	17
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/model/Model.cpp:493:5:int Model::getGraphNumData(int)	5
