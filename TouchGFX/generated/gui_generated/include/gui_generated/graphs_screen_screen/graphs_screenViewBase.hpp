@@ -41,10 +41,6 @@ public:
     {
         // Override and implement this function in graphs_screen
     }
-    virtual void graphLive()
-    {
-        // Override and implement this function in graphs_screen
-    }
 
 protected:
     FrontendApplication& application() {
@@ -66,10 +62,10 @@ protected:
     touchgfx::GraphElementGridX graphMajorXAxisGrid;
     touchgfx::GraphElementGridY graphMajorYAxisGrid;
     touchgfx::GraphLabelsY graphMajorYAxisLabel;
-    touchgfx::GraphElementLine graphLine1;
-    touchgfx::PainterRGB565 graphLine1Painter;
     touchgfx::GraphElementDots graphDots1;
     touchgfx::PainterRGB565 graphDots1Painter;
+    touchgfx::GraphElementLine graphLine1;
+    touchgfx::PainterRGB565 graphLine1Painter;
     touchgfx::ScalableImage close_icon;
     touchgfx::ClickListener< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  > close_btn;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  month_btn;
@@ -81,9 +77,6 @@ protected:
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  hour_btn;
     touchgfx::BoxWithBorder hour_bg;
     touchgfx::TextArea hour_label;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  live_btn;
-    touchgfx::BoxWithBorder live_bg;
-    touchgfx::TextArea live_label;
     touchgfx::TextArea graph_title_hot_temp;
     touchgfx::TextArea graph_title_hot_hum;
     touchgfx::TextArea graph_title_cold_temp;
@@ -93,7 +86,6 @@ protected:
     touchgfx::TextArea time_month_label;
     touchgfx::TextArea time_day_label;
     touchgfx::TextArea time_hour_label;
-    touchgfx::TextArea time_live_label;
 
 private:
 

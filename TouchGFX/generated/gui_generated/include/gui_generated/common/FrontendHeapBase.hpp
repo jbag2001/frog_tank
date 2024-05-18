@@ -16,8 +16,6 @@
 
 #include <gui/home_screen_screen/home_screenView.hpp>
 #include <gui/home_screen_screen/home_screenPresenter.hpp>
-#include <gui/clock_screen_screen/clock_screenView.hpp>
-#include <gui/clock_screen_screen/clock_screenPresenter.hpp>
 #include <gui/settings_screen_screen/settings_screenView.hpp>
 #include <gui/settings_screen_screen/settings_screenPresenter.hpp>
 #include <gui/alerts_screen_screen/alerts_screenView.hpp>
@@ -47,11 +45,10 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< home_screenView,
-            touchgfx::meta::TypeList< clock_screenView,
             touchgfx::meta::TypeList< settings_screenView,
             touchgfx::meta::TypeList< alerts_screenView,
             touchgfx::meta::TypeList< graphs_screenView,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
     /**
@@ -64,11 +61,10 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< home_screenPresenter,
-            touchgfx::meta::TypeList< clock_screenPresenter,
             touchgfx::meta::TypeList< settings_screenPresenter,
             touchgfx::meta::TypeList< alerts_screenPresenter,
             touchgfx::meta::TypeList< graphs_screenPresenter,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
     /**

@@ -12,10 +12,10 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
 
-    virtual void updateClock(int hour, int min);
     virtual void updateMistIcon(bool disabled, bool misting);
     virtual void updateHeatIcon(bool disabled, bool heating);
     virtual void updateReadings(int hotTemp, int hotHum, int coldTemp, int coldHum);
+    virtual void updateAlertsIcon(bool error);
 
     // Inherited button listeners
     virtual void set_hot_temp();

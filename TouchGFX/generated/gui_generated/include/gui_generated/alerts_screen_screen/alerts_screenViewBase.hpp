@@ -14,6 +14,7 @@
 #include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class alerts_screenViewBase : public touchgfx::View<alerts_screenPresenter>
 {
@@ -37,7 +38,13 @@ protected:
     touchgfx::Line header_bar;
     touchgfx::PainterRGB565 header_barPainter;
     touchgfx::TextArea header;
-    touchgfx::TextArea alert_text;
+    touchgfx::TextAreaWithOneWildcard alert_text;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t ALERT_TEXT_SIZE = 1000;
+    touchgfx::Unicode::UnicodeChar alert_textBuffer[ALERT_TEXT_SIZE];
 
 private:
 

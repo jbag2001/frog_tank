@@ -2,20 +2,20 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
 ../../TouchGFX/generated/gui_generated/include/gui_generated/settings_screen_screen/settings_screenViewBase.hpp:32:18:virtual void settings_screenViewBase::action1()	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:31:6:virtual void settings_screenView::tearDownScreen()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:31:6:virtual void settings_screenView::tearDownScreen()	3
 ../../TouchGFX/gui/include/gui/settings_screen_screen/settings_screenView.hpp:11:13:settings_screenView::~settings_screenView()	1
 ../../TouchGFX/gui/include/gui/settings_screen_screen/settings_screenView.hpp:11:13:virtual settings_screenView::~settings_screenView()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Bitmap.hpp:142:14:touchgfx::BitmapId touchgfx::Bitmap::getId() const	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:42:6:virtual void settings_screenView::toggleHeating()	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:52:6:virtual void settings_screenView::toggleMisting()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:50:6:virtual void settings_screenView::toggleHeating()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:55:6:virtual void settings_screenView::toggleMisting()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
 C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:9:1:settings_screenView::settings_screenView()	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:97:6:void settings_screenView::setTempLabel(int)	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:85:6:virtual void settings_screenView::tempChange(int)	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:102:6:void settings_screenView::setHumLabel(int)	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:91:6:virtual void settings_screenView::humChange(int)	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:100:6:void settings_screenView::setTempLabel(int)	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:88:6:virtual void settings_screenView::tempChange(int)	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:105:6:void settings_screenView::setHumLabel(int)	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:94:6:virtual void settings_screenView::humChange(int)	1
 C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:14:6:virtual void settings_screenView::setupScreen()	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:57:6:virtual void settings_screenView::lowTemp()	2
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:64:6:virtual void settings_screenView::incTemp()	2
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:71:6:virtual void settings_screenView::lowHum()	2
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:78:6:virtual void settings_screenView::incHum()	2
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:60:6:virtual void settings_screenView::lowTemp()	2
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:67:6:virtual void settings_screenView::incTemp()	2
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:74:6:virtual void settings_screenView::lowHum()	2
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/settings_screen_screen/settings_screenView.cpp:81:6:virtual void settings_screenView::incHum()	2

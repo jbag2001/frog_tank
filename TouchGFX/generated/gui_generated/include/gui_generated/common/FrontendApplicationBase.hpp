@@ -25,9 +25,6 @@ public:
 
     void gotohome_screenScreenSlideTransitionNorth();
 
-    // clock_screen
-    void gotoclock_screenScreenSlideTransitionSouth();
-
     // settings_screen
     void gotosettings_screenScreenSlideTransitionSouth();
 
@@ -46,9 +43,6 @@ protected:
     void gotohome_screenScreenNoTransitionImpl();
 
     void gotohome_screenScreenSlideTransitionNorthImpl();
-
-    // clock_screen
-    void gotoclock_screenScreenSlideTransitionSouthImpl();
 
     // settings_screen
     void gotosettings_screenScreenSlideTransitionSouthImpl();

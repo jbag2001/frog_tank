@@ -22,10 +22,6 @@ void home_screenView::tearDownScreen()
     home_screenViewBase::tearDownScreen();
 }
 
-void home_screenView::updateClock(int hour, int min) {
-	dg_clk.setTime24Hour(hour, min, 0);
-}
-
 void home_screenView::updateMistIcon(bool enabled, bool misting) {
 	mist_disb_line.setVisible(!enabled);
 	mist_disb_circ.setVisible(!enabled);
@@ -56,6 +52,16 @@ void home_screenView::updateReadings(int hotTemp, int hotHum, int coldTemp, int 
 	hot_hum_disp.invalidateContent();
 	cold_temp_disp.invalidateContent();
 	cold_hum_disp.invalidateContent();
+}
+
+void home_screenView::updateAlertsIcon(bool error) {
+	alerts_btn.setVisible(error);
+	alerts_icon.setVisible(error);
+	remove_frog.setVisible(!error);
+
+	alerts_btn.invalidate();
+	alerts_icon.invalidate();
+	remove_frog.invalidate();
 }
 
 void home_screenView::set_hot_temp() {

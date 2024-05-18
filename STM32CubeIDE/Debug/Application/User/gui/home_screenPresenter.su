@@ -1,10 +1,11 @@
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:22:18:virtual void ModelListener::updateClock()	0	static
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:40:18:virtual void ModelListener::updateLiveGraph()	0	static
 ../../TouchGFX/gui/include/gui/home_screen_screen/home_screenPresenter.hpp:28:13:home_screenPresenter::~home_screenPresenter()	0	static
 C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenPresenter.cpp:10:6:virtual void home_screenPresenter::activate()	8	static
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenPresenter.cpp:16:6:virtual void home_screenPresenter::deactivate()	0	static
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenPresenter.cpp:21:6:virtual void home_screenPresenter::updateClock()	4	static
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenPresenter.cpp:26:6:virtual void home_screenPresenter::updateIcons()	16	static
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenPresenter.cpp:32:6:virtual void home_screenPresenter::updateReadings()	16	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenPresenter.cpp:17:6:virtual void home_screenPresenter::deactivate()	0	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenPresenter.cpp:22:6:virtual void home_screenPresenter::updateIcons()	16	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenPresenter.cpp:28:6:virtual void home_screenPresenter::updateReadings()	16	static
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenPresenter.cpp:38:6:virtual void home_screenPresenter::updateFlags()	0	static
 ../../TouchGFX/gui/include/gui/home_screen_screen/home_screenPresenter.hpp:28:13:virtual home_screenPresenter::~home_screenPresenter()	8	static
 ../../TouchGFX/gui/include/gui/home_screen_screen/home_screenPresenter.hpp:28:13:virtual void* home_screenPresenter::_ZThn4_N20home_screenPresenterD1Ev()	0	static
 C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/home_screen_screen/home_screenPresenter.cpp:4:1:home_screenPresenter::home_screenPresenter(home_screenView&)	0	static

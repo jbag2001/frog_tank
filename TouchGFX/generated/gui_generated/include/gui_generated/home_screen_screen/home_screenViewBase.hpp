@@ -10,10 +10,9 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/BoxWithBorder.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/containers/buttons/Buttons.hpp>
-#include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
+#include <touchgfx/containers/buttons/Buttons.hpp>
 #include <touchgfx/mixins/ClickListener.hpp>
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
@@ -60,9 +59,6 @@ protected:
     touchgfx::BoxWithBorder cold_bg;
     touchgfx::TextArea hot_label;
     touchgfx::TextArea cold_label;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  dg_clk_btn;
-    touchgfx::BoxWithBorder dg_clk_bg;
-    touchgfx::DigitalClock dg_clk;
     touchgfx::TextAreaWithOneWildcard hot_hum_disp;
     touchgfx::TextAreaWithOneWildcard hot_temp_disp;
     touchgfx::TextArea hot_temp_sup;
@@ -71,6 +67,7 @@ protected:
     touchgfx::TextAreaWithOneWildcard cold_temp_disp;
     touchgfx::TextArea cold_temp_sup;
     touchgfx::TextAreaWithOneWildcard cold_hum_disp;
+    touchgfx::ScalableImage remove_frog;
     touchgfx::ScalableImage alerts_icon;
     touchgfx::ClickListener< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  > alerts_btn;
     touchgfx::ScalableImage settings_icon;
@@ -93,7 +90,6 @@ protected:
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  cold_temp_btn;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  hot_hum_btn;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  hot_temp_btn;
-    touchgfx::ScalableImage remove_frog;
 
     /*
      * Wildcard Buffers

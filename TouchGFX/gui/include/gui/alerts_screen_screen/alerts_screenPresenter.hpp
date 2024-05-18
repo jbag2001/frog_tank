@@ -27,6 +27,12 @@ public:
 
     virtual ~alerts_screenPresenter() {}
 
+    // Flag Gets
+    bool getFlagWarm() { return model->getFlagWarm(); }
+    bool getFlagCold() { return model->getFlagCold(); }
+    bool getFlagMist() { return model->getFlagMist(); }
+    bool getFlagI2C() { return model->getFlagI2C(); }
+
 private:
     alerts_screenPresenter();
 

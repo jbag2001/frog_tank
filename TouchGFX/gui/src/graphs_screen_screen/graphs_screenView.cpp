@@ -32,11 +32,11 @@ void graphs_screenView::updateGraph() {
 	int* data = presenter->getGraphData(isTempDisp, isHotZone, graphTime);
 	int num_data = presenter->getGraphNumData(graphTime);
 
-	if (graphTime == LIVE) {
+	if (graphTime == HOUR) {
 		live_graph.clear();
 
 		// Keep these constant since this is a live/dynamic graph
-		live_graph.setGraphRangeX(0, 60); // Last 60 seconds of data
+		live_graph.setGraphRangeX(0, 60); // Last 60 minutes of data
 		live_graph.setGraphRangeY(30, 100); // Temp/hum should not fall out of this range
 
 		// Add existing data points
@@ -83,7 +83,7 @@ void graphs_screenView::updateGraph() {
 }
 
 void graphs_screenView::updateLiveGraph() {
-	if (graphTime == LIVE) { // Only update if the live data screen is active
+	if (graphTime == HOUR) { // Only update if the hour data screen is active
 		int* data = presenter->getGraphData(isTempDisp, isHotZone, graphTime);
 		int num_data = presenter->getGraphNumData(graphTime);
 
@@ -115,19 +115,16 @@ void graphs_screenView::setXLabel() {
 	time_hour_label.setVisible(graphTime == HOUR);
 	time_day_label.setVisible(graphTime == DAY);
 	time_month_label.setVisible(graphTime == MONTH);
-	time_live_label.setVisible(graphTime == LIVE);
 
 	time_hour_label.invalidate();
 	time_day_label.invalidate();
 	time_month_label.invalidate();
-	time_live_label.invalidate();
 }
 
 void graphs_screenView::updateButtons() {
     hour_bg.setColor(touchgfx::Color::getColorFromRGB(240, 240, 240));
     day_bg.setColor(touchgfx::Color::getColorFromRGB(240, 240, 240));
     month_bg.setColor(touchgfx::Color::getColorFromRGB(240, 240, 240));
-    live_bg.setColor(touchgfx::Color::getColorFromRGB(240, 240, 240));
 
 	switch (graphTime) {
 		case HOUR:
@@ -139,21 +136,11 @@ void graphs_screenView::updateButtons() {
 		case MONTH:
 		    month_bg.setColor(touchgfx::Color::getColorFromRGB(57, 167, 206));
 			break;
-		case LIVE:
-		    live_bg.setColor(touchgfx::Color::getColorFromRGB(57, 167, 206));
-			break;
-			break;
 	}
 
 	hour_bg.invalidate();
 	day_bg.invalidate();
 	month_bg.invalidate();
-	live_bg.invalidate();
-}
-
-void graphs_screenView::graphLive() {
-	graphTime = LIVE;
-	updateGraph();
 }
 
 void graphs_screenView::graphHour() {

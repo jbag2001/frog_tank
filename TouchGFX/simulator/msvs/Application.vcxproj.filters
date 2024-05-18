@@ -142,9 +142,6 @@
     <Filter Include="Source Files\gui\home_screen_screen">
       <UniqueIdentifier>9C076BAF-41B8-9066-7134-5B0EF6DB14F1</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\clock_screen_screen">
-      <UniqueIdentifier>8ACC5720-15A4-EE7F-0852-94F78D8C2C47</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\gui\home_screen_screen">
       <UniqueIdentifier>D88DA365-1491-F205-8B1C-77C02666B8C5</UniqueIdentifier>
     </Filter>
@@ -153,9 +150,6 @@
     </Filter>
     <Filter Include="Header Files\gui\graphs_screen_screen">
       <UniqueIdentifier>8B9E471A-C03D-015D-E3AD-87D2876501C3</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\clock_screen_screen">
-      <UniqueIdentifier>5A02FCFD-7574-9B9E-70F8-ECBE5ACFE689</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\gui\graphs_screen_screen">
       <UniqueIdentifier>F9A7E35A-85C0-2B53-8429-C5DA3F29EA1B</UniqueIdentifier>
@@ -214,14 +208,8 @@
     <Filter Include="Header Files\generated\gui_generated\settings_screen_screen">
       <UniqueIdentifier>9D795B2B-2DF9-3840-AD43-85BE781C0028</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\clock_screen_screen">
-      <UniqueIdentifier>892B66C1-BFA3-C436-DBDE-BEB0BAF510E9</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\generated\simulator\video">
       <UniqueIdentifier>307CE02F-D411-A315-B5AF-6130BE899888</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\clock_screen_screen">
-      <UniqueIdentifier>F773B7DC-83D7-8E62-8173-4BD6E99A8C27</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\generated\gui_generated\alerts_screen_screen">
       <UniqueIdentifier>FBD790D5-016B-296A-950F-20EA3330F943</UniqueIdentifier>
@@ -260,15 +248,6 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\alerts_screen_screen\alerts_screenViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\alerts_screen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\clock_screen_screen\clock_screenPresenter.cpp">
-      <Filter>Source Files\gui\clock_screen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\clock_screen_screen\clock_screenView.cpp">
-      <Filter>Source Files\gui\clock_screen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\clock_screen_screen\clock_screenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\clock_screen_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\common\FrontendApplication.cpp">
       <Filter>Source Files\gui\common</Filter>
@@ -729,15 +708,6 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\alerts_screen_screen\alerts_screenViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\alerts_screen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\clock_screen_screen\clock_screenPresenter.hpp">
-      <Filter>Header Files\gui\clock_screen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\clock_screen_screen\clock_screenView.hpp">
-      <Filter>Header Files\gui\clock_screen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\clock_screen_screen\clock_screenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\clock_screen_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\DirectFrameBufferVideoController.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>

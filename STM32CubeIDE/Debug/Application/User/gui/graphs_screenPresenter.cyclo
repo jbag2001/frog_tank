@@ -1,6 +1,7 @@
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:22:18:virtual void ModelListener::updateClock()	1
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::updateIcons()	1
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:34:18:virtual void ModelListener::updateReadings()	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:46:18:virtual void ModelListener::updateFlags()	1
 ../../TouchGFX/gui/include/gui/graphs_screen_screen/graphs_screenPresenter.hpp:28:13:graphs_screenPresenter::~graphs_screenPresenter()	1
 C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenPresenter.cpp:10:6:virtual void graphs_screenPresenter::activate()	1
 C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/graphs_screen_screen/graphs_screenPresenter.cpp:20:6:virtual void graphs_screenPresenter::updateLiveGraph()	1

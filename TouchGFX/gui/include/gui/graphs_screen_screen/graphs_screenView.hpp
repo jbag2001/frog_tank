@@ -20,7 +20,6 @@ public:
     virtual void setXLabel();
     virtual void updateButtons();
 
-    virtual void graphLive();
     virtual void graphHour();
     virtual void graphDay();
     virtual void graphMonth();
@@ -32,10 +31,9 @@ protected:
     enum graphTime {
     	HOUR = 0,
 		DAY = 1,
-		MONTH = 2,
-		LIVE = 3
+		MONTH = 2
     };
-    graphTime graphTime = LIVE; // Default to day
+    graphTime graphTime = HOUR; // Default display
 };
 
 #endif // GRAPHS_SCREENVIEW_HPP

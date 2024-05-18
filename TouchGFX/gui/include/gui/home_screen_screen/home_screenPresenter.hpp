@@ -27,13 +27,16 @@ public:
 
     virtual ~home_screenPresenter() {}
 
-    virtual void updateClock();
     virtual void updateIcons();
     virtual void updateReadings();
+    virtual void updateFlags();
 
-    // Clock Gets
-    int getHour() { return model->getHour(); }
-    int getMin() { return model->getMin(); }
+    // Alerts Gets
+    bool getFlagWarm() { return model->getFlagWarm(); };
+    bool getFlagCold() { return model->getFlagCold(); };
+    bool getFlagI2C() { return model->getFlagI2C(); };
+    bool getFlagMist() { return model->getFlagMist(); };
+    bool getFlagAny() { return model->getFlagAny(); };
 
     // Mist Gets
     bool getIsMisting() { return model->getIsMisting(); }

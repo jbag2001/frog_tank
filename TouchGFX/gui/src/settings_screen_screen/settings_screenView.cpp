@@ -37,15 +37,18 @@ void settings_screenView::tearDownScreen()
 
     presenter->setHeatEn(heatOn);
     presenter->setTempSet(tempVal);
+
+    if (heatOn)
+    	presenter->setFlagWarm(false);
+
+    if (mistOn) {
+    	presenter->setFlagCold(false);
+    	presenter->setFlagMist(false);
+    }
 }
 
 void settings_screenView::toggleHeating()
 {
-	// This code bellow is just for testing buttons
-	//	if (heat_toggle.getState())
-	//		HAL_GPIO_WritePin(GPIOK, GPIO_PIN_3, GPIO_PIN_SET);
-	//	else
-	//		HAL_GPIO_WritePin(GPIOK, GPIO_PIN_3, GPIO_PIN_RESET);
 	heatOn = heat_toggle.getState();
 }
 

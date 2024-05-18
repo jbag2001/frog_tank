@@ -1,8 +1,8 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/alerts_screen_screen/alerts_screenView.cpp:13:6:virtual void alerts_screenView::tearDownScreen()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/alerts_screen_screen/alerts_screenView.cpp:45:6:virtual void alerts_screenView::tearDownScreen()	1
 ../../TouchGFX/gui/include/gui/alerts_screen_screen/alerts_screenView.hpp:11:13:alerts_screenView::~alerts_screenView()	1
 ../../TouchGFX/gui/include/gui/alerts_screen_screen/alerts_screenView.hpp:11:13:virtual alerts_screenView::~alerts_screenView()	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/alerts_screen_screen/alerts_screenView.cpp:3:1:alerts_screenView::alerts_screenView()	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/alerts_screen_screen/alerts_screenView.cpp:8:6:virtual void alerts_screenView::setupScreen()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/alerts_screen_screen/alerts_screenView.cpp:4:1:alerts_screenView::alerts_screenView()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/gui/src/alerts_screen_screen/alerts_screenView.cpp:9:6:virtual void alerts_screenView::setupScreen()	4

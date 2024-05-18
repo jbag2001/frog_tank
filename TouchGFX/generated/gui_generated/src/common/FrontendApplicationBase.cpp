@@ -11,8 +11,6 @@
 #include <platform/driver/lcd/LCD16bpp.hpp>
 #include <gui/home_screen_screen/home_screenView.hpp>
 #include <gui/home_screen_screen/home_screenPresenter.hpp>
-#include <gui/clock_screen_screen/clock_screenView.hpp>
-#include <gui/clock_screen_screen/clock_screenPresenter.hpp>
 #include <gui/settings_screen_screen/settings_screenView.hpp>
 #include <gui/settings_screen_screen/settings_screenPresenter.hpp>
 #include <gui/alerts_screen_screen/alerts_screenView.hpp>
@@ -60,19 +58,6 @@ void FrontendApplicationBase::gotohome_screenScreenSlideTransitionNorth()
 void FrontendApplicationBase::gotohome_screenScreenSlideTransitionNorthImpl()
 {
     touchgfx::makeTransition<home_screenView, home_screenPresenter, touchgfx::SlideTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// clock_screen
-
-void FrontendApplicationBase::gotoclock_screenScreenSlideTransitionSouth()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoclock_screenScreenSlideTransitionSouthImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoclock_screenScreenSlideTransitionSouthImpl()
-{
-    touchgfx::makeTransition<clock_screenView, clock_screenPresenter, touchgfx::SlideTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // settings_screen

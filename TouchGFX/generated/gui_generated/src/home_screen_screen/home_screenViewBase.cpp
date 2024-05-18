@@ -44,28 +44,6 @@ home_screenViewBase::home_screenViewBase() :
     cold_label.setTypedText(touchgfx::TypedText(T___SINGLEUSE_OP3B));
     add(cold_label);
 
-    dg_clk_btn.setBoxWithBorderPosition(0, 0, 100, 25);
-    dg_clk_btn.setBorderSize(5);
-    dg_clk_btn.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    dg_clk_btn.setAlpha(0);
-    dg_clk_btn.setAction(flexButtonCallback);
-    dg_clk_btn.setPosition(135, 5, 100, 25);
-    add(dg_clk_btn);
-
-    dg_clk_bg.setPosition(135, 5, 100, 25);
-    dg_clk_bg.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    dg_clk_bg.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    dg_clk_bg.setBorderSize(1);
-    add(dg_clk_bg);
-
-    dg_clk.setPosition(135, 5, 100, 25);
-    dg_clk.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    dg_clk.setTypedText(touchgfx::TypedText(T___SINGLEUSE_F8LB));
-    dg_clk.displayLeadingZeroForHourIndicator(true);
-    dg_clk.setDisplayMode(touchgfx::DigitalClock::DISPLAY_12_HOUR_NO_SECONDS);
-    dg_clk.setTime12Hour(12, 0, 0, true);
-    add(dg_clk);
-
     hot_hum_disp.setXY(30, 165);
     hot_hum_disp.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     hot_hum_disp.setLinespacing(0);
@@ -125,6 +103,11 @@ home_screenViewBase::home_screenViewBase() :
     cold_hum_disp.resizeToCurrentText();
     cold_hum_disp.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8KM9));
     add(cold_hum_disp);
+
+    remove_frog.setBitmap(touchgfx::Bitmap(BITMAP_FROG_ID));
+    remove_frog.setPosition(371, 160, 100, 100);
+    remove_frog.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(remove_frog);
 
     alerts_icon.setBitmap(touchgfx::Bitmap(BITMAP_ALERT_ICON_ID));
     alerts_icon.setPosition(381, 172, 80, 80);
@@ -253,11 +236,6 @@ home_screenViewBase::home_screenViewBase() :
     hot_temp_btn.setAction(flexButtonCallback);
     hot_temp_btn.setPosition(20, 45, 150, 60);
     add(hot_temp_btn);
-
-    remove_frog.setBitmap(touchgfx::Bitmap(BITMAP_FROG_ID));
-    remove_frog.setPosition(371, 160, 100, 100);
-    remove_frog.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-    add(remove_frog);
 }
 
 home_screenViewBase::~home_screenViewBase()
@@ -285,13 +263,6 @@ void home_screenViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButt
         //When alerts_btn clicked change screen to alerts_screen
         //Go to alerts_screen with screen transition towards South
         application().gotoalerts_screenScreenSlideTransitionSouth();
-    }
-    if (&src == &dg_clk_btn)
-    {
-        //go_clock
-        //When dg_clk_btn clicked change screen to clock_screen
-        //Go to clock_screen with screen transition towards South
-        application().gotoclock_screenScreenSlideTransitionSouth();
     }
     if (&src == &hot_temp_btn)
     {

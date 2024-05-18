@@ -110,9 +110,8 @@
 ../../TouchGFX/generated/gui_generated/include/gui_generated/graphs_screen_screen/graphs_screenViewBase.hpp:32:18:virtual void graphs_screenViewBase::graphDay()	1
 ../../TouchGFX/generated/gui_generated/include/gui_generated/graphs_screen_screen/graphs_screenViewBase.hpp:36:18:virtual void graphs_screenViewBase::graphHour()	1
 ../../TouchGFX/generated/gui_generated/include/gui_generated/graphs_screen_screen/graphs_screenViewBase.hpp:40:18:virtual void graphs_screenViewBase::graphMonth()	1
-../../TouchGFX/generated/gui_generated/include/gui_generated/graphs_screen_screen/graphs_screenViewBase.hpp:44:18:virtual void graphs_screenViewBase::graphLive()	1
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<graphs_screenPresenter>::~View()	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/generated/gui_generated/src/graphs_screen_screen/graphs_screenViewBase.cpp:307:6:virtual void graphs_screenViewBase::setupScreen()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/generated/gui_generated/src/graphs_screen_screen/graphs_screenViewBase.cpp:282:6:virtual void graphs_screenViewBase::setupScreen()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp:35:7:touchgfx::ClickButtonTrigger::~ClickButtonTrigger()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:41:7:touchgfx::BoxWithBorderButtonStyle<touchgfx::ClickButtonTrigger>::~BoxWithBorderButtonStyle()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:123:18:void touchgfx::BoxWithBorderButtonStyle<T>::handlePressedUpdated() [with T = touchgfx::ClickButtonTrigger]	3
@@ -138,9 +137,9 @@ C:/TouchGFXProjects/frog_tank/TouchGFX/generated/gui_generated/src/graphs_screen
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:33:7:virtual touchgfx::ClickListener<touchgfx::BoxWithBorderButtonStyle<touchgfx::ClickButtonTrigger> >::~ClickListener()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:560:17:virtual int touchgfx::GraphElementGridX::getCorrectlyScaledGridInterval(const touchgfx::AbstractDataGraph*) const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:621:17:virtual int touchgfx::GraphElementGridY::getCorrectlyScaledGridInterval(const touchgfx::AbstractDataGraph*) const	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/generated/gui_generated/src/graphs_screen_screen/graphs_screenViewBase.cpp:302:1:graphs_screenViewBase::~graphs_screenViewBase()	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/generated/gui_generated/src/graphs_screen_screen/graphs_screenViewBase.cpp:302:1:virtual graphs_screenViewBase::~graphs_screenViewBase()	1
-C:/TouchGFXProjects/frog_tank/TouchGFX/generated/gui_generated/src/graphs_screen_screen/graphs_screenViewBase.cpp:312:6:void graphs_screenViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	6
+C:/TouchGFXProjects/frog_tank/TouchGFX/generated/gui_generated/src/graphs_screen_screen/graphs_screenViewBase.cpp:277:1:graphs_screenViewBase::~graphs_screenViewBase()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/generated/gui_generated/src/graphs_screen_screen/graphs_screenViewBase.cpp:277:1:virtual graphs_screenViewBase::~graphs_screenViewBase()	1
+C:/TouchGFXProjects/frog_tank/TouchGFX/generated/gui_generated/src/graphs_screen_screen/graphs_screenViewBase.cpp:287:6:void graphs_screenViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	5
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1176:18:virtual void touchgfx::AbstractDataGraph::invalidateContent() const	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp:99:18:virtual void touchgfx::AbstractButtonContainer::executeAction()	3

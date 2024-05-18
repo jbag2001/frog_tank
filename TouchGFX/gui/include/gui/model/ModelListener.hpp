@@ -38,6 +38,12 @@ public:
      * Used for displaying new live readings.
      */
     virtual void updateLiveGraph() {}
+
+    /**
+     * Gets called in the home sceen.
+     * Used for dispalying the alerts icon.
+     */
+    virtual void updateFlags() {}
 protected:
     Model* model;
 };

@@ -25,6 +25,7 @@ graphs_screenViewBase::graphs_screenViewBase() :
     live_graph.setGraphAreaMargin(3, 18, 0, 0);
     live_graph.setGraphAreaPadding(3, 3, 3, 3);
     live_graph.setGraphRangeY(30, 100);
+    live_graph.setVisible(false);
     live_graphMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(222, 222, 222));
     live_graphMajorXAxisGrid.setInterval(2);
     live_graphMajorXAxisGrid.setLineWidth(1);
@@ -76,15 +77,15 @@ graphs_screenViewBase::graphs_screenViewBase() :
     graphMajorYAxisLabel.setScale(1);
     graph.addLeftElement(graphMajorYAxisLabel);
 
-    graphLine1Painter.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
-    graphLine1.setPainter(graphLine1Painter);
-    graphLine1.setLineWidth(2);
-    graph.addGraphElement(graphLine1);
-
     graphDots1Painter.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
     graphDots1.setPainter(graphDots1Painter);
     graphDots1.setDotWidth(6);
     graph.addGraphElement(graphDots1);
+
+    graphLine1Painter.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
+    graphLine1.setPainter(graphLine1Painter);
+    graphLine1.setLineWidth(2);
+    graph.addGraphElement(graphLine1);
 
 
     graph.addDataPoint(0, 95);
@@ -153,103 +154,84 @@ graphs_screenViewBase::graphs_screenViewBase() :
     close_btn.setPosition(395, 5, 80, 80);
     add(close_btn);
 
-    month_btn.setBoxWithBorderPosition(0, 0, 65, 25);
+    month_btn.setBoxWithBorderPosition(0, 0, 66, 25);
     month_btn.setBorderSize(0);
     month_btn.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     month_btn.setAction(flexButtonCallback);
-    month_btn.setPosition(231, 5, 65, 25);
+    month_btn.setPosition(132, 5, 66, 25);
     add(month_btn);
 
-    month_bg.setPosition(231, 5, 65, 25);
+    month_bg.setPosition(132, 5, 66, 25);
     month_bg.setColor(touchgfx::Color::getColorFromRGB(240, 240, 240));
     month_bg.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     month_bg.setBorderSize(1);
     add(month_bg);
 
-    month_label.setXY(232, 5);
+    month_label.setXY(134, 5);
     month_label.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     month_label.setLinespacing(0);
     month_label.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3I7S));
     add(month_label);
 
-    day_btn.setBoxWithBorderPosition(0, 0, 60, 25);
+    day_btn.setBoxWithBorderPosition(0, 0, 43, 25);
     day_btn.setBorderSize(0);
     day_btn.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     day_btn.setAction(flexButtonCallback);
-    day_btn.setPosition(164, 5, 60, 25);
+    day_btn.setPosition(86, 5, 43, 25);
     add(day_btn);
 
-    day_bg.setPosition(164, 5, 60, 25);
+    day_bg.setPosition(86, 5, 43, 25);
     day_bg.setColor(touchgfx::Color::getColorFromRGB(57, 167, 206));
     day_bg.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     day_bg.setBorderSize(1);
     add(day_bg);
 
-    day_label.setXY(175, 5);
+    day_label.setXY(87, 5);
     day_label.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     day_label.setLinespacing(0);
     day_label.setTypedText(touchgfx::TypedText(T___SINGLEUSE_M7F2));
     add(day_label);
 
-    hour_btn.setBoxWithBorderPosition(0, 0, 60, 25);
+    hour_btn.setBoxWithBorderPosition(0, 0, 53, 25);
     hour_btn.setBorderSize(0);
     hour_btn.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     hour_btn.setAction(flexButtonCallback);
-    hour_btn.setPosition(97, 5, 60, 25);
+    hour_btn.setPosition(30, 5, 53, 25);
     add(hour_btn);
 
-    hour_bg.setPosition(97, 5, 60, 25);
+    hour_bg.setPosition(30, 5, 53, 25);
     hour_bg.setColor(touchgfx::Color::getColorFromRGB(240, 240, 240));
     hour_bg.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     hour_bg.setBorderSize(1);
     add(hour_bg);
 
-    hour_label.setXY(103, 5);
+    hour_label.setXY(32, 5);
     hour_label.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     hour_label.setLinespacing(0);
     hour_label.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RA0L));
     add(hour_label);
 
-    live_btn.setBoxWithBorderPosition(0, 0, 60, 25);
-    live_btn.setBorderSize(0);
-    live_btn.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    live_btn.setAction(flexButtonCallback);
-    live_btn.setPosition(30, 5, 60, 25);
-    add(live_btn);
-
-    live_bg.setPosition(30, 5, 60, 25);
-    live_bg.setColor(touchgfx::Color::getColorFromRGB(240, 240, 240));
-    live_bg.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    live_bg.setBorderSize(1);
-    add(live_bg);
-
-    live_label.setXY(40, 5);
-    live_label.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    live_label.setLinespacing(0);
-    live_label.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CXAN));
-    add(live_label);
-
-    graph_title_hot_temp.setXY(90, 257);
+    graph_title_hot_temp.setXY(200, 6);
     graph_title_hot_temp.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_title_hot_temp.setLinespacing(0);
     graph_title_hot_temp.setTypedText(touchgfx::TypedText(T___SINGLEUSE_YDNV));
+    graph_title_hot_temp.setVisible(false);
     add(graph_title_hot_temp);
 
-    graph_title_hot_hum.setXY(90, 257);
+    graph_title_hot_hum.setXY(200, 6);
     graph_title_hot_hum.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_title_hot_hum.setLinespacing(0);
     graph_title_hot_hum.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HMU1));
     graph_title_hot_hum.setVisible(false);
     add(graph_title_hot_hum);
 
-    graph_title_cold_temp.setXY(90, 257);
+    graph_title_cold_temp.setXY(200, 6);
     graph_title_cold_temp.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_title_cold_temp.setLinespacing(0);
     graph_title_cold_temp.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WGUQ));
-    graph_title_cold_temp.setVisible(false);
     add(graph_title_cold_temp);
 
-    graph_title_cold_hum.setXY(90, 257);
+    graph_title_cold_hum.setXY(200, 6);
     graph_title_cold_hum.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph_title_cold_hum.setLinespacing(0);
     graph_title_cold_hum.setTypedText(touchgfx::TypedText(T___SINGLEUSE_NHGP));
@@ -271,32 +253,25 @@ graphs_screenViewBase::graphs_screenViewBase() :
     hum_label.setVisible(false);
     add(hum_label);
 
-    time_month_label.setXY(280, 257);
+    time_month_label.setXY(207, 257);
     time_month_label.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     time_month_label.setLinespacing(0);
     time_month_label.setTypedText(touchgfx::TypedText(T___SINGLEUSE_OBH7));
     time_month_label.setVisible(false);
     add(time_month_label);
 
-    time_day_label.setXY(280, 257);
+    time_day_label.setXY(205, 257);
     time_day_label.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     time_day_label.setLinespacing(0);
     time_day_label.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HD0M));
     add(time_day_label);
 
-    time_hour_label.setXY(280, 257);
+    time_hour_label.setXY(200, 257);
     time_hour_label.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     time_hour_label.setLinespacing(0);
     time_hour_label.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HDN7));
     time_hour_label.setVisible(false);
     add(time_hour_label);
-
-    time_live_label.setXY(280, 257);
-    time_live_label.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    time_live_label.setLinespacing(0);
-    time_live_label.setTypedText(touchgfx::TypedText(T___SINGLEUSE_I8B1));
-    time_live_label.setVisible(false);
-    add(time_live_label);
 }
 
 graphs_screenViewBase::~graphs_screenViewBase()
@@ -338,12 +313,5 @@ void graphs_screenViewBase::flexButtonCallbackHandler(const touchgfx::AbstractBu
         //When month_btn clicked call virtual function
         //Call graphMonth
         graphMonth();
-    }
-    if (&src == &live_btn)
-    {
-        //graphLive
-        //When live_btn clicked call virtual function
-        //Call graphLive
-        graphLive();
     }
 }

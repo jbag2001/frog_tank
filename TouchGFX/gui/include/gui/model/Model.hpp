@@ -14,12 +14,6 @@ public:
         modelListener = listener;
     }
 
-    // Gets/Sets of clock vars
-    void saveHour(int saveHour) { hour = saveHour; }
-    void saveMin(int saveMin) { min = saveMin; }
-    int getHour() { return hour; }
-    int getMin() { return min; }
-
     // Gets/Sets of Hum vars
     bool getIsMisting() { return isMisting; }
     bool getMistEn() { return mistEn; }
@@ -46,6 +40,18 @@ public:
     int* getGraphData(bool isTemp, bool isHot, int timeType);
     int getGraphNumData(int timeType);
 
+    // Gets for flags
+    bool getFlagWarm() { return f_warm; };
+    bool getFlagCold() { return f_cold; };
+    bool getFlagI2C() { return f_i2c; };
+    bool getFlagMist() { return f_mist; };
+    bool getFlagAny() { return f_any; };
+
+    // Sets for flags
+    void setFlagWarm(bool val) { f_warm = val; };
+    void setFlagCold(bool val) { f_cold = val; };
+    void setFlagMist(bool val) { f_mist = val; };
+
     void tick();
 protected:
     ModelListener* modelListener;
@@ -55,16 +61,20 @@ protected:
     virtual void heatGPIO();
 
     virtual void initI2C();
-    virtual void sensorLogic(int tickTim);
     virtual void sensorSelect(bool zoneSelect);
-    virtual void sensorPrime();
+    virtual void sensorPrime(bool zoneSelect);
     virtual void sensorRead(bool zoneSelect);
 
     // I2C Regs
     const uint8_t sensorAddr = 0x44;
     const uint8_t muxAddr = 0x70;
-    bool errorI2C;
-    bool errorMux;
+
+    // Error Flags
+    bool f_warm; // Warm sensor not working flag
+    bool f_cold; // Cold sensor not working flag
+    bool f_i2c; // I2C boneless chicken
+    bool f_mist; // Non-effective misting flag
+    bool f_any; // If any flags are set
 
     // Clock Vars
     int hour;
@@ -97,13 +107,6 @@ protected:
     // Bits for when we select a historical graph
     bool graphType; // true = temp, false = hum
     bool graphZone; // true = hot, false = cold
-
-    // Last min data for graphs screen
-    int num_secs; // Number of data points stored
-    int hot_temp_secs[60];
-    int cold_temp_secs[60];
-    int hot_hum_secs[60];
-    int cold_hum_secs[60];
 
     // Last hour data for graphs screen
     int num_mins; // Number of data points stored

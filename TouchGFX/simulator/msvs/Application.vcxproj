@@ -20,9 +20,6 @@
     <ClCompile Include="..\..\gui\src\alerts_screen_screen\alerts_screenPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\alerts_screen_screen\alerts_screenView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\alerts_screen_screen\alerts_screenViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\clock_screen_screen\clock_screenPresenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\clock_screen_screen\clock_screenView.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\clock_screen_screen\clock_screenViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\common\FrontendApplication.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\common\FrontendApplicationBase.cpp"/>
     <ClCompile Include="..\..\gui\src\graphs_screen_screen\graphs_screenPresenter.cpp"/>
@@ -179,9 +176,6 @@
     <ClInclude Include="..\..\gui\include\gui\alerts_screen_screen\alerts_screenPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\alerts_screen_screen\alerts_screenView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\alerts_screen_screen\alerts_screenViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\clock_screen_screen\clock_screenPresenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\clock_screen_screen\clock_screenView.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\clock_screen_screen\clock_screenViewBase.hpp"/>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\DirectFrameBufferVideoController.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\common\FrontendApplication.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\FrontendApplicationBase.hpp"/>

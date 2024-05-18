@@ -9,18 +9,14 @@ home_screenPresenter::home_screenPresenter(home_screenView& v)
 
 void home_screenPresenter::activate()
 {
-	updateClock();
 	updateIcons();
+	updateFlags();
+
 }
 
 void home_screenPresenter::deactivate()
 {
 
-}
-
-void home_screenPresenter::updateClock()
-{
-	view.updateClock(getHour(), getMin());
 }
 
 void home_screenPresenter::updateIcons()
@@ -37,4 +33,9 @@ void home_screenPresenter::updateReadings()
 		getColdTemp(),
 		getColdHum()
 	);
+}
+
+void home_screenPresenter::updateFlags()
+{
+	view.updateAlertsIcon(getFlagAny());
 }

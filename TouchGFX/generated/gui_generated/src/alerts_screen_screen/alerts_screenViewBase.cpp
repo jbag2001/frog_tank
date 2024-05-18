@@ -48,9 +48,12 @@ alerts_screenViewBase::alerts_screenViewBase() :
     header.setTypedText(touchgfx::TypedText(T___SINGLEUSE_E1BR));
     add(header);
 
-    alert_text.setXY(16, 46);
+    alert_text.setPosition(6, 46, 383, 221);
     alert_text.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     alert_text.setLinespacing(0);
+    alert_text.setWideTextAction(WIDE_TEXT_WORDWRAP);
+    Unicode::snprintf(alert_textBuffer, ALERT_TEXT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_28A9).getText());
+    alert_text.setWildcard(alert_textBuffer);
     alert_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GWRZ));
     add(alert_text);
 }

@@ -14,6 +14,13 @@ Model::Model() : modelListener(0)
 	min = 0;
 	sec = 0;
 
+	// Flags
+	f_warm = false;
+	f_cold = false;
+	f_i2c = false;
+	f_mist = false;
+	f_any = false;
+
 	// Mist Inits
     isMisting = false;
     mistEn = false;
@@ -32,9 +39,6 @@ Model::Model() : modelListener(0)
     coldTempVal = 0;
 
 	secsHeating = 0;
-
-    errorI2C = false;
-    errorMux = false;
 
 	initGPIOs();
 	initI2C();
@@ -75,7 +79,25 @@ void Model::tick()
 	}
 
 	// Handles sensor reading logic
-	sensorLogic(tickTim);
+	if (secChange) {
+		switch (sec) {
+			// HOT ZONE SENSOR LOGIC
+			case 1: sensorSelect(true); // Selects the hot zone sensor.
+				break;
+			case 2: sensorPrime(true); // Primes selected sensor.
+				break;
+			case 3: sensorRead(true); // Reads sensor data.
+				break;
+
+			// COLD ZONE SENSOR LOGIC
+			case 4: sensorSelect(false); // Selects the cold zone sensor.
+				break;
+			case 5: sensorPrime(true); // Primes selected sensor.
+				break;
+			case 6: sensorRead(false); // Reads sensor data.
+				break;
+		}
+	}
 
 	// Misting logic
 	if (mistEn) {
@@ -95,13 +117,13 @@ void Model::tick()
 				}
 				else { // Waiting for the next cycle of misting to start
 					if (secChange) secsSinceMisting++;
-					if (secsSinceMisting >= 120) { // Wait 120 seconds until we mist again
-						secsSinceMisting = 0;
 
+					// Start misting instant on first cycle, wait 5 mins for additional cycles
+					if (numTimesMisting == 0 || secsSinceMisting >= 60*5) {
 						// We've misted X number of times and still haven't reached the threshold
 						if (numTimesMisting >= 4) {
 							mistEn = false;
-							// TODO put alert here
+							f_mist = true;
 						}
 						else {
 							isMisting = true;
@@ -113,11 +135,10 @@ void Model::tick()
 				isMisting = false;
 				numTimesMisting = 0;
 				secsMisting = 0;
-				secsSinceMisting = 115; // Set this high so system doesn't wait 2 mins before misting again
+				secsSinceMisting = 0;
 			}
 		}
 		else {
-			// TODO Popup an alert here, commented out for testing
 			mistEn = false;
 		}
 
@@ -141,33 +162,12 @@ void Model::tick()
 			}
 		}
 		else {
-			// TODO Popup an alert here, commented out for testing
-			// heatEn = false;
+			heatEn = false;
 		}
 	}
 	else {
 		isHeating = false;
 		secsHeating = 0;
-	}
-
-	// Logic for managing seconds data for graphs
-	if (secChange) {
-		if (num_secs == 60) { // Shift data if max length is reached
-			for (int i = 1; i < 60; i++) {
-				hot_temp_secs[i-1] = hot_temp_secs[i];
-				hot_hum_secs[i-1] = hot_hum_secs[i];
-				cold_temp_secs[i-1] = cold_temp_secs[i];
-				cold_hum_secs[i-1] = cold_hum_secs[i];
-			}
-		}
-		else
-			num_secs++;
-
-		// Update last value to be latest reading
-		hot_temp_secs[num_secs - 1] = warmTempVal;
-		hot_hum_secs[num_secs - 1] = warmHumVal;
-		cold_temp_secs[num_secs - 1] = coldTempVal;
-		cold_hum_secs[num_secs - 1] = coldHumVal;
 	}
 
 	// Logic for managing minutes data for graphs
@@ -183,26 +183,10 @@ void Model::tick()
 		else
 			num_mins++;
 
-		// Update last value to be latest reading
-		long warmTempSum = 0;
-		long warmHumSum = 0;
-		long coldTempSum = 0;
-		long coldHumSum = 0;
-
-		// We don't have to worry about dividing by zero
-		// Because there should always at least be one data point
-
-		for (int i = 0; i < num_secs; i++) {
-			warmTempSum += hot_temp_secs[i];
-			warmHumSum += hot_hum_secs[i];
-			coldTempSum += cold_temp_secs[i];
-			coldHumSum += cold_hum_secs[i];
-		}
-
-		hot_temp_mins[num_mins - 1] = warmTempSum / num_secs;
-		hot_hum_mins[num_mins - 1] = warmHumSum / num_secs;
-		cold_temp_mins[num_mins - 1] = coldTempSum / num_secs;
-		cold_hum_mins[num_mins - 1] = coldHumSum / num_secs;
+		hot_temp_mins[num_mins - 1] = warmTempVal;
+		hot_hum_mins[num_mins - 1] = warmHumVal;
+		cold_temp_mins[num_mins - 1] = coldTempVal;
+		cold_hum_mins[num_mins - 1] = coldHumVal;
 	}
 
 	// Logic for managing hours data for graphs
@@ -275,7 +259,22 @@ void Model::tick()
 		cold_hum_days[num_days - 1] = coldHumSum / num_hours;
 	}
 
+	// Flag handlers
+	f_any = f_warm || f_cold || f_i2c || f_mist;
 
+	// All of the heating/misting must be manually turned on in the settings screen
+
+	if (f_i2c) // Turn off misting and heating if issue is i2c based
+		heatEn = mistEn = false;
+
+	if (f_warm) // Turn off hating if the warm sensor isn't working
+		heatEn = false;
+
+	if (f_cold) // Turn off misting if the cold sensor isn't working
+		mistEn = false;
+
+	if (f_mist) // Turn off misting if mist flag is on
+		mistEn = false;
 
 	// Update UI in a per second basis
 	if (secChange) {
@@ -283,35 +282,15 @@ void Model::tick()
 		mistGPIO();
 		heatGPIO();
 
-		modelListener->updateLiveGraph();
 		modelListener->updateClock();
 		modelListener->updateIcons();
 		modelListener->updateReadings();
+		modelListener->updateFlags();
 	}
-}
 
-/**
- * Handles the logic of reading from the sensors.
- * This is time based to ensure proper timing of read and write of the mux and sensors.
- * @param tick - Tick of the 60 fps timer
- */
-void Model::sensorLogic(int tick) {
-	switch (tick) {
-		// HOT ZONE SENSOR LOGIC
-		case 0: sensorSelect(true); // Selects the hot zone sensor.
-			break;
-		case 10: sensorPrime(); // Primes selected sensor.
-			break;
-		case 20: sensorRead(true); // Reads sensor data.
-			break;
-
-		// COLD ZONE SENSOR LOGIC
-		case 30: sensorSelect(false); // Selects the cold zone sensor.
-			break;
-		case 40: sensorPrime(); // Primes selected sensor.
-			break;
-		case 50: sensorRead(false); // Reads sensor data.
-			break;
+	// Update live graph data every minute
+	if (minChange) {
+		modelListener->updateLiveGraph();
 	}
 }
 
@@ -330,15 +309,15 @@ void Model::initI2C() {
 	hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
 
 	if (HAL_I2C_Init(&hi2c1) != HAL_OK)
-		errorI2C = true;
+		f_i2c = true;
 
 	// Configure Analogue filter
 	if (HAL_I2CEx_ConfigAnalogFilter(&hi2c1, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
-		errorI2C = true;
+		f_i2c = true;
 
 	//Configure Digital filter
 	if (HAL_I2CEx_ConfigDigitalFilter(&hi2c1, 0) != HAL_OK)
-		errorI2C = true;
+		f_i2c = true;
 }
 
 /**
@@ -348,25 +327,21 @@ void Model::initI2C() {
 void Model::sensorSelect(bool zoneSelect) {
 	uint8_t data[1];
 
-	if (zoneSelect) data[0] = 0x01;
-	else data[0] = 0x02;
-
+	if (zoneSelect) data[0] = 0x01; // Select warm sensor
+	else data[0] = 0x02; // Select cold sensor
 
 	HAL_StatusTypeDef ret = HAL_I2C_Master_Transmit(&hi2c1, muxAddr<<1, data, 1, 50);
 
-	if (ret != HAL_OK)
-		errorMux = true;
+	f_i2c = ret == HAL_ERROR;
 }
 
 /**
  * Primes the sensor that a read request of the data will be sent.
+ * @param zoneSelect - true: hot zone, false: cold zone
  */
-void Model::sensorPrime() {
+void Model::sensorPrime(bool zoneSelect) {
 	uint8_t data[2] = {0x24, 0x16};
 	HAL_StatusTypeDef ret = HAL_I2C_Master_Transmit(&hi2c1, sensorAddr<<1, data, 2, 50);
-
-	if (ret != HAL_OK)
-		errorI2C = true;
 }
 
 /**
@@ -395,8 +370,17 @@ void Model::sensorRead(bool zoneSelect) {
 			coldHumVal = humVal;
 		}
 	}
-	else {
-		errorI2C = true;
+	else { // Zero out values on error
+		if (zoneSelect) { // Warm sensor is selected
+			f_warm = true;
+			warmTempVal = 0;
+			warmHumVal = 0;
+		}
+		else { // Cold sensor is selected
+			f_cold = true;
+			coldTempVal = 0;
+			coldHumVal = 0;
+		}
 	}
 }
 
@@ -476,16 +460,6 @@ int* Model::getGraphData(bool isTemp, bool isHot, int timeType) {
 		else if (!isHot && !isTemp)
 			return cold_hum_days;
 	}
-	else if (timeType == 3) { // Live data type
-		if (isHot && isTemp)
-			return hot_temp_secs;
-		else if (isHot && !isTemp)
-			return hot_hum_secs;
-		else if (!isHot && isTemp)
-			return cold_temp_secs;
-		else if (!isHot && !isTemp)
-			return cold_hum_secs;
-	}
 
 	return {};
 }
@@ -497,8 +471,6 @@ int Model::getGraphNumData(int timeType) {
 		return num_hours;
 	else if (timeType == 2)
 	 	return num_days;
-	else if (timeType == 3)
-		return num_secs;
 
 	return 0;
 }

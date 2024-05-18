@@ -39,6 +39,11 @@ public:
     int getTempSet() { return model->getTempSet(); }
     void setTempSet(int tempSet) { model->setTempSet(tempSet); }
 
+    // Flag Sets
+    void setFlagWarm(bool val) { model->setFlagWarm(val); }
+    void setFlagCold(bool val) { model->setFlagCold(val); }
+    void setFlagMist(bool val) { model->setFlagMist(val); }
+
 private:
     settings_screenPresenter();
 
